@@ -1,29 +1,36 @@
 h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%; }
+  font-size: 250%;
+}
 
 body {
   margin: 2em;
   color: #888;
-  font-family: Cambria, Georgia; }
+  font-family: Cambria, Georgia;
+}
 
 input {
-  margin: 15px auto; }
+  margin: 15px auto;
+}
+
 
 .main {
   padding-bottom: 40px;
-  text-align: center; }
+  text-align: center;
+}
 
 .entry {
   height: 300px;
-  margin-bottom: 30px; }
-  .entry .poster-container {
+  margin-bottom: 30px;
+
+  .poster-container {
     width: 150px;
     height: 225px;
     margin: auto;
-    display: block; }
-    .entry .poster-container .poster-overlay {
+    display: block;
+
+    .poster-overlay {
       position: absolute;
       background: black;
       color: white;
@@ -35,31 +42,44 @@ input {
       transition: opacity .5s;
       -moz-transition: opacity .5s;
       -webkit-transition: opacity .5s;
-      -o-transition: opacity .5s; }
-      .entry .poster-container .poster-overlay:hover {
+      -o-transition: opacity .5s;
+
+      &:hover {
         opacity: .8;
         transition: opacity .5s;
         -moz-transition: opacity .5s;
         -webkit-transition: opacity .5s;
-        -o-transition: opacity .5s; }
-      .entry .poster-container .poster-overlay .release-date {
+        -o-transition: opacity .5s;
+      }
+
+      .release-date {
         top: 25px;
         position: absolute;
-        width: 100%; }
-      .entry .poster-container .poster-overlay .vote-average {
+        width: 100%;
+      }
+
+      .vote-average {
         bottom: 15px;
         position: absolute;
-        width: 100%; }
-    .entry .poster-container .poster {
+        width: 100%;
+      }
+    }
+
+    .poster {
       width: 150px;
-      height: 225px; }
-  .entry .title {
+      height: 225px;
+    }
+  }
+
+  .title {
     text-align: center;
     font-size: 25px;
     font-weight: 700;
     color: cadetblue;
-    padding: 5px; }
-  .entry .error {
-    color: red; }
+    padding: 5px;
+  }
 
-/*# sourceMappingURL=styles.css.map */
+  .error {
+    color: red;
+  }
+}
