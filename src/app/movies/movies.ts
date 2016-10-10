@@ -1,7 +1,13 @@
 export class Movies {
-    constructor(public page:number,
-                public results:Array<any>,
-                public total_pages:number,
-                public total_results:number) {
+    constructor(public adult:boolean,
+                public backdrop_path:string,
+                public id:number,
+                public original_title:string,
+                public release_date:string,
+                public poster_path:string,
+                public popularity:number,
+                public title:string,
+                public vote_average:number,
+                public vote_count:number) {
     }
 }
